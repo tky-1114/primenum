@@ -3,9 +3,13 @@ import time
 
 start = time.perf_counter()
 
-a = np.arange(1000000)
-b = a * 2
-print(b)
+i=0
+
+while(True):
+    a = np.arange(i, i+1)
+    b = a * 2
+    print(b)
+    i+=1
 end = time.perf_counter()
 
 print(end - start,"s")
